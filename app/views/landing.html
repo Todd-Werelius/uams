@@ -1,0 +1,33 @@
+<h1 class = "content-title" ng-bind="vmc.getRouteName()">EMPTY CONTENT</h1>
+
+<div layout="column" layout-align="start center">
+
+	<!-- Group of courses -->
+	<div class="coursesGroupContainer">
+		<div layout flex class="coursesGroupHeader" style="background:rgba(0,255,0,0.25)">
+			<div flex="80" layout layout-align="start center">
+				<h3 class="coursesGroupTitle">Best Sellers in</h3>
+				&nbsp
+				<h4 class="coursesGroupSubtitle">"Development"</h4>
+			</div>
+			<div layout flex layout-align="end center" >
+				<button ng-show="!expanded" ng-disabled="!scrolledRight" ng-click="scrolledRight = !scrolledRight"><</button>
+				&nbsp
+				<button ng-show="!expanded" ng-disabled="scrolledRight" ng-click="scrolledRight = !scrolledRight">></button>
+				&nbsp&nbsp&nbsp
+				<button ng-click="(expanded = !expanded && !(scrolledRight=false))">{{expanded?"-":"+"}}</button>
+			</div>
+		</div>
+		<div layout ng-class="{courseCardGroup:true,
+		                       courseCardGroupExpanded:expanded,
+		                       courseCardGroupScrollRight:scrolledRight
+		                      }" style="background:rgba(255,0,0,0.25);">
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">1</div>
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">2</div>
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">3</div>
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">4</div>
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">5</div>
+			<div ng-class="{courseCard:true,courseCardExpanded:expanded}" style="background: rgba(0,0,255,0.25)">6</div>
+		</div>
+	</div>
+</div>

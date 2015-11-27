@@ -1,0 +1,30 @@
+<!-- Helper class that just identifies our partial view -->
+<h1 class = "content-title" ng-bind=vmc.getRouteName()>EMPTY CONTENT</h1>
+<div style="font-weight:700;margin:10px 10px 0 10px;">Standard div container</div>
+<div class="d-pale" style="height:100px;margin:10px 10px 0 10px;">
+	<div class="d-red">Div Cell#1</div>
+	<div class="d-blue">Div Cell#2</div>
+	<div class="d-green">Div Cell#3</div>
+</div>
+
+<div style="font-weight:700;margin:10px 10px 0 10px;">Row container, layout-align not present</div>
+<div layout class="d-grey" style="height:100px;margin:10px 10px 0 10px;">
+	<div class="d-red">CELL#1</div>
+	<div class="d-blue">CELL#2</div>
+	<div class="d-green">CELL#3</div>
+</div>
+
+<div style="font-weight:700;margin:10px 10px 0 10px;">Row container, layout-align=end</div>
+<div layout="row" layout-align="end" class="d-pale" style="height:100px;margin:10px 10px 0 10px;">
+	<div class="d-red">CELL#1</div>
+	<div class="d-blue">CELL#2</div>
+	<div class="d-green">CELL#3</div>
+</div>
+
+<div style="font-weight:700;margin:10px 10px 0 10px;">Row container, layout-align=start</div>
+<div layout="row" layout-align="start" class="d-grey" style="height:100px;margin:10px 10px 0 10px;">
+	<div class="d-red">CELL#1</div>
+	<div class="d-blue">CELL#2</div>
+	<div class="d-green">CELL#3</div>
+</div>
+

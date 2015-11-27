@@ -5,8 +5,8 @@
   angular.module( 'app', ['ngMaterial','mdxUtil','ui.router'] )
     .config(function (appThemesProvider, appStatesProvider) {
 
-      //appStatesProvider.register();
-      //appThemesProvider.register();
+      appStatesProvider.register();
+      appThemesProvider.register();
 
     }).controller( 'AppCtrl', ['$rootScope','appStates',function($rootScope,appStates) {
       "use strict";

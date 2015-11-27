@@ -7,27 +7,28 @@
         templateUrl : "views/landing.html"
       },
       route      : "Landing",
-      seoTitle   : "Online Courses, Anytime, Anywhere!",
-      seoContent : "SEO Content Landing Page"
+      seoTitle   : "Real Time Photography Destination Guides",
+      seoContent : "GPS Guided Photography Tours"
     },
     courses   : {
       params     : {
-        url         : "/courses",
-        templateUrl : "views/courses.html"
+        url         : "/destinations",
+        templateUrl : "views/destinations.html"
       },
-      route      : "Courses",
-      seoTitle   : "30,000+ On-Demand Classes",
-      seoContent : "SEO Content Courses"
+      route      : "Destinations",
+      seoTitle   : "1000+ On-Demand Destinations",
+      seoContent : "Inspirational Photography Destinations"
     },
-    mycourses : {
-      params    : {
-        url         : "/mycourses",
-        templateUrl : "views/mycourses.html"
+    themes   : {
+      params     : {
+        url         : "/themes",
+        templateUrl : "views/themes.html"
       },
-      route      : "My Courses",
-      seoTitle   : "Courses for Life, Become an Instructor",
+      route      : "Themes",
+      seoTitle   : "ngMaterial Themes Lecture",
       seoContent : ""
     },
+
     layouts   : {
       params     : {
         url         : "/layouts",
@@ -36,16 +37,7 @@
       route      : "Layouts",
       seoTitle   : "ngMaterial Layout Lecture",
       seoContent : ""
-    },
-    grids   : {
-    params     : {
-      url         : "/grids",
-        templateUrl : "views/grids.html"
-    },
-    route      : "Grids",
-      seoTitle   : "ngMaterial Grid Lecture",
-      seoContent : ""
-  }
+    }
   };
 
   //noinspection JSUnusedGlobalSymbols,JSUnusedLocalSymbols

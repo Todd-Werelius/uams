@@ -1,0 +1,330 @@
+html, body {
+  height  : 100%;
+  margin  : 0;
+  padding : 0;
+}
+
+body {
+
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+}
+
+/* Make sure this works even before angular is loaded */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display : none !important;
+}
+
+/*Doesn't make it worse, and mostly it makes it slightly better!*/
+.optimize-font {
+  text-rendering          : optimizeLegibility;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+}
+
+/*No text highlighting anywhere!*/
+.no-selection {
+  -webkit-user-select : none; /* Chrome all / Safari all */
+  -moz-user-select    : none; /* Firefox all */
+  -ms-user-select     : none; /* IE 10+ */
+  user-select         : none; /* Likely future */
+}
+
+/*Text only high lighting*/
+.text-selection {
+  -webkit-user-select : text; /* Chrome all / Safari all */
+  -moz-user-select    : text; /* Firefox all */
+  -ms-user-select     : text; /* IE 10+ */
+  user-select         : text; /* Likely future */
+}
+
+/*All highlighting anywhere!*/
+.all-selection {
+  /*noinspection CssInvalidPropertyValue*/
+  -webkit-user-select : all; /* Chrome all / Safari all */
+  -moz-user-select    : all; /* Firefox all */
+  -ms-user-select     : all; /* IE 10+ */
+  user-select         : all; /* Likely future */
+}
+
+.content {
+  overflow-x : hidden;
+}
+
+.d-grey {
+  background : rgba(0, 0, 0, 0.1);
+}
+
+.d-pale {
+  background : rgba(100, 100, 0, 0.2);
+}
+
+.d-red {
+  background : rgba(255, 0, 0, 0.2);
+}
+
+.d-green {
+  background : rgba(0, 255, 0, 0.2);
+}
+
+.d-blue {
+  background : rgba(0, 0, 255, 0.2);
+}
+
+.content-title {
+  width          : 100%;
+  height         : 64px;
+  font-size      : 64px;
+  line-height    : 64px;
+  margin         : 0;
+  text-align     : center;
+  vertical-align : middle;
+  position       : fixed;
+  top            : calc((100% / 2) - 32px);
+  left           : 0;
+  color          : rgba(0, 0, 0, 0.1);
+}
+
+md-icon {
+  fill : inherit;
+}
+
+.mdx-top-edge-branding {
+  position : fixed;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 4px;
+}
+
+.mdx-no-whiteframe {
+  box-shadow : 0 0 0 0 !important;
+}
+
+.md-item-last {
+  margin-right : -8px !important;
+}
+
+.mdx-toolbar-center {
+  padding-right : 0 !important;
+  padding-left  : 0 !important;
+}
+
+.mdx-toolbar-onleft {
+  padding-right : 0 !important;
+}
+
+.mdx-toolbar-onright {
+  padding-left : 0 !important;
+}
+
+.mdx-toolbar-branding-text {
+  font-size   : 1.3em !important;
+  line-height : 1.3em !important;
+  font-weight : 700 !important;
+}
+
+/*
+  Extend FAB placement buttons to use edges, and add center orientation
+*/
+
+/* Bottom edge mini fab's*/
+.md-button.md-fab.md-mini.mdx-fab-bottom-edge-right {
+  top      : auto;
+  left     : auto;
+  right    : 20px;
+  bottom   : -25px;
+  position : absolute;
+}
+
+.md-button.md-fab.md-mini.mdx-fab-bottom-edge-center {
+  top      : auto;
+  right    : auto;
+  left     : calc(50% - 24px);
+  bottom   : -25px;
+  position : absolute;
+}
+
+.md-button.md-fab.md-mini.mdx-fab-bottom-edge-left {
+  top      : auto;
+  right    : auto;
+  left     : 20px;
+  bottom   : -25px;
+  position : absolute;
+}
+
+/* Top edge mini fab's*/
+.md-button.md-fab.md-mini.mdx-fab-top-edge-right {
+  bottom   : auto;
+  left     : auto;
+  right    : 20px;
+  top      : -27px;
+  position : absolute;
+}
+
+.md-button.md-fab.md-mini.mdx-fab-top-edge-center {
+  bottom   : auto;
+  right    : auto;
+  left     : calc(50% - 24px);
+  top      : -27px;
+  position : absolute;
+}
+
+.md-button.md-fab.md-mini.mdx-fab-top-edge-left {
+  bottom   : auto;
+  right    : auto;
+  left     : 20px;
+  top      : -27px;
+  position : absolute;
+}
+
+/* Bottom edge fab's*/
+.md-button.md-fab.mdx-fab-bottom-edge-right {
+  top      : auto;
+  left     : auto;
+  right    : 20px;
+  bottom   : -32px;
+  position : absolute;
+}
+
+.md-button.md-fab.mdx-fab-bottom-edge-center {
+  top      : auto;
+  right    : auto;
+  left     : calc(50% - 32px);
+  bottom   : -32px;
+  position : absolute;
+}
+
+.md-button.md-fab.mdx-fab-bottom-edge-left {
+  top      : auto;
+  right    : auto;
+  left     : 20px;
+  bottom   : -32px;
+  position : absolute;
+}
+
+/* Top edge fab's*/
+.md-button.md-fab.mdx-fab-top-edge-right {
+  bottom   : auto;
+  left     : auto;
+  right    : 20px;
+  top      : -27px;
+  position : absolute;
+}
+
+.md-button.md-fab.mdx-fab-top-edge-center {
+  bottom   : auto;
+  right    : auto;
+  left     : calc(50% - 24px);
+  top      : -27px;
+  position : absolute;
+}
+
+.md-button.md-fab.mdx-fab-top-edge-left {
+  bottom   : auto;
+  right    : auto;
+  left     : 20px;
+  top      : -27px;
+  position : absolute;
+}
+
+.mdx-whiteframe-te-1dp, .mdx-whiteframe-te-z1 {
+  box-shadow : 0 -1px 3px 0 rgba(0, 0, 0, 0.2), 0 -1px 1px 0 rgba(0, 0, 0, 0.14), 0 -2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-2dp {
+  box-shadow : 0 -1px 5px 0 rgba(0, 0, 0, 0.2), 0 -2px 2px 0 rgba(0, 0, 0, 0.14), 0 -3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-3dp {
+  box-shadow : 0 -1px 8px 0 rgba(0, 0, 0, 0.2), 0 -3px 4px 0 rgba(0, 0, 0, 0.14), 0 -3px 3px -2px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-4dp, .mdx-whiteframe-te-z2 {
+  box-shadow : 0 -2px 4px -1px rgba(0, 0, 0, 0.2), 0 -4px 5px 0 rgba(0, 0, 0, 0.14), 0 -1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-5dp {
+  box-shadow : 0 -3px 5px -1px rgba(0, 0, 0, 0.2), 0 -5px 8px 0 rgba(0, 0, 0, 0.14), 0 -1px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-6dp {
+  box-shadow : 0 -3px 5px -1px rgba(0, 0, 0, 0.2), 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-7dp, .mdx-whiteframe-te-z3 {
+  box-shadow : 0 -4px 5px -2px rgba(0, 0, 0, 0.2), 0 -7px 10px 1px rgba(0, 0, 0, 0.14), 0 -2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-8dp {
+  box-shadow : 0 -5px 5px -3px rgba(0, 0, 0, 0.2), 0 -8px 10px 1px rgba(0, 0, 0, 0.14), 0 -3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-9dp {
+  box-shadow : 0 -5px 6px -3px rgba(0, 0, 0, 0.2), 0 -9px 12px 1px rgba(0, 0, 0, 0.14), 0 -3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+
+.md-whiteframe-te-10dp, .md-whiteframe-te-z4 {
+  box-shadow : 0 -6px 6px -3px rgba(0, 0, 0, 0.2), 0 -10px 14px 1px rgba(0, 0, 0, 0.14), 0 -4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-11dp {
+  box-shadow : 0 -6px 7px -4px rgba(0, 0, 0, 0.2), 0 -11px 15px 1px rgba(0, 0, 0, 0.14), 0 -4px 20px 3px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-12dp {
+  box-shadow : 0 -7px 8px -4px rgba(0, 0, 0, 0.2), 0 -12px 17px 2px rgba(0, 0, 0, 0.14), 0 -5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-13dp, .mdx-whiteframe-te-z5 {
+  box-shadow : 0 -7px 8px -4px rgba(0, 0, 0, 0.2), 0 -13px 19px 2px rgba(0, 0, 0, 0.14), 0 -5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-14dp {
+  box-shadow : 0 -7px 9px -4px rgba(0, 0, 0, 0.2), 0 -14px 21px 2px rgba(0, 0, 0, 0.14), 0 -5px 26px 4px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-15dp {
+  box-shadow : 0 -8px 9px -5px rgba(0, 0, 0, 0.2), 0 -15px 22px 2px rgba(0, 0, 0, 0.14), 0 -6px 28px 5px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-16dp {
+  box-shadow : 0 -8px 10px -5px rgba(0, 0, 0, 0.2), 0 -16px 24px 2px rgba(0, 0, 0, 0.14), 0 -6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-17dp {
+  box-shadow : 0 -8px 11px -5px rgba(0, 0, 0, 0.2), 0 -17px 26px 2px rgba(0, 0, 0, 0.14), 0 -6px 32px 5px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-18dp {
+  box-shadow : 0 -9px 11px -5px rgba(0, 0, 0, 0.2), 0 -18px 28px 2px rgba(0, 0, 0, 0.14), 0 -7px 34px 6px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-19dp {
+  box-shadow : 0 -9px 12px -6px rgba(0, 0, 0, 0.2), 0 -19px 29px 2px rgba(0, 0, 0, 0.14), 0 -7px 36px 6px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-20dp {
+  box-shadow : 0 -10px 13px -6px rgba(0, 0, 0, 0.2), 0 -20px 31px 3px rgba(0, 0, 0, 0.14), 0 -8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-21dp {
+  box-shadow : 0 -10px 13px -6px rgba(0, 0, 0, 0.2), 0 -21px 33px 3px rgba(0, 0, 0, 0.14), 0 -8px 40px 7px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-22dp {
+  box-shadow : 0 -10px 14px -6px rgba(0, 0, 0, 0.2), 0 -22px 35px 3px rgba(0, 0, 0, 0.14), 0 -8px 42px 7px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-23dp {
+  box-shadow : 0 -11px 14px -7px rgba(0, 0, 0, 0.2), 0 -23px 36px 3px rgba(0, 0, 0, 0.14), 0 -9px 44px 8px rgba(0, 0, 0, 0.12);
+}
+
+.mdx-whiteframe-te-24dp {
+  box-shadow : 0 -11px 15px -7px rgba(0, 0, 0, 0.2), 0 -24px 38px 3px rgba(0, 0, 0, 0.14), 0 -9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+

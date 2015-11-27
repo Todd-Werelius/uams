@@ -10,13 +10,32 @@
 	      <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+	      <!--
 	      <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://rawgit.com/Todd-Werelius/angular-material-midnight-dist/master/angular-material.min.css">
 
+        <link rel ="stylesheet"  href="https://rawgit.com/Todd-Werelius/angular-material-midnight-dist/master/angular-material.min.css">
+	      -->
+	      <link rel = "stylesheet" href = "css/angular-material.css"/>
+	      <link rel = "stylesheet" href = "css/app.css"/>
+
+	      <!--
 	      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        -->
     </head>
-    <body>
+    <body layout="column" layout-fill class = "ng-cloak optimize-font no-selection">
+
+      <md-progress-linear class="md-accent" md-mode="determinate" value="0"></md-progress-linear>
+      <md-toolbar class="md-whiteframe-4dp">
+
+      </md-toolbar>
+
+      <md-content flex>
+	      <ui-view>
+
+	      </ui-view>
+      </md-content>
+
       <script src="js/plugins.js"></script>
 
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
@@ -31,7 +50,8 @@
       <script src = "js/mdxLib/mdxUtil.js"></script>
       <script src = "js/authService.js"></script>
       <script src = "js/app.js"></script>
-      <script src = "js/appState.js"></script>      <script src = "js/appTheme.js"></script>
+      <script src = "js/appState.js"></script>
+      <script src = "js/appTheme.js"></script>
 
       <!-- Test & Mocking -->
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-mocks.js"></script>
