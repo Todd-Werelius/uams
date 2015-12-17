@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Angular Material Bleeding Edge" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://E:/angular-material/angular-material-midnight-dist/angular-material.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://E:/angular-material/angular-material-midnight-dist/angular-material.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

@@ -5,12 +5,11 @@ html, body {
 }
 
 body {
-
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-
+  -webkit-backface-visibility : hidden;
+  /*noinspection CssInvalidPropertyValue*/
+  -webkit-perspective         : 1000;
+  transform                   : translateZ(0);
+  -webkit-transform           : translateZ(0);
 }
 
 /* Make sure this works even before angular is loaded */
@@ -48,6 +47,17 @@ body {
   -moz-user-select    : all; /* Firefox all */
   -ms-user-select     : all; /* IE 10+ */
   user-select         : all; /* Likely future */
+}
+
+.mdx-secondary-listAction {
+  height:100%;
+  margin-right:-16px !important;
+  padding-right:8px;
+  padding-left: 8px;
+}
+.mdx-list-item-carded {
+  margin-right:-16px !important;
+  margin-left:-16px !important;
 }
 
 .content {

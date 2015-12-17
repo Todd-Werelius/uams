@@ -1,0 +1,18 @@
+.title-row {
+  padding-left : 24px;
+  height: 32px;
+}
+
+.dRed {
+  background:rgba(255,0,0,0.35);
+}
+.dBlue {
+  background:rgba(0,0,255,0.35);
+}
+.dGreen {
+  background:rgba(0,255,0,0.35);
+}
+.dGray {
+  color : rgba(255,255,255,0.85);
+  background:rgba(0,0,0,0.35);
+}

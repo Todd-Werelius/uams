@@ -14,5 +14,6 @@
     <orderEntry type="library" name="angular-touch" level="application" />
     <orderEntry type="library" name="angular-ui-router" level="application" />
     <orderEntry type="library" name="Mopholo node_modules" level="project" />
+    <orderEntry type="library" name="Angular Material Bleeding Edge" level="project" />
   </component>
 </module>

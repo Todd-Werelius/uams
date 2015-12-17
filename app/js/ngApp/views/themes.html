@@ -1,0 +1,75 @@
+<h1 class = "content-title" ng-bind=vmc.getRouteName()>EMPTY CONTENT</h1>
+
+<div layout="row" layout-wrap style="padding:16px;" >
+	<div flex="25" style="min-width: 260px !important;">
+	<md-card mdx-background>
+		<md-card-header mdx-background="p:blue">
+			<md-card-header-text>
+				<span class="md-title" style="color:rgba(255,255,255,0.87)">Primary</span>
+				<span class="md-subhead" style="color:rgba(255,255,255,0.87);">Blue</span>
+			</md-card-header-text>
+		</md-card-header>
+		<md-card-content>
+			<div layout mdx-background="p:blue A400" style="padding-right:8px">
+				<div flex layout>
+					<div flex="33" layout layout-align="end">500</div>
+					<div flex layout layout-align="end">#FFFFFF</div>
+				</div>
+				<div flex layout layout-align="end center">500</div>
+			</div>
+			<div layout mdx-background="p:blue A700" style="padding-right:8px">
+				<div flex layout layout-align="start">
+					<div flex="33" layout layout-align="end">A100</div>
+					<div flex layout layout-align="end">#FFFFFF</div>
+				</div>
+				<div flex layout layout-align="end center">
+					hue-1
+				</div>
+			</div>
+		</md-card-content>
+		<md-divider></md-divider>
+		<md-card-actions layout="row" layout-align="end center">
+			<md-button class="md-accent">Reset</md-button>
+		</md-card-actions>
+	</md-card>
+</div>
+	<div flex="25" style="min-width: 260px !important;">
+		<md-card mdx-paint-bg="indigo primary">
+			<md-card-header mdx-paint-bg="accent">
+				<md-card-header-text>
+					<span class="md-title">Accent</span>
+					<span class="md-subhead">Indigo</span>
+				</md-card-header-text>
+			</md-card-header>
+		</md-card>
+	</div>
+	<div flex="25" style="min-width: 260px !important;">
+		<md-card mdx-paint-bg="indigo primary">
+			<md-card-header mdx-paint-bg="accent">
+				<md-card-header-text>
+					<span class="md-title">Warn</span>
+					<span class="md-subhead">Indigo</span>
+				</md-card-header-text>
+			</md-card-header>
+		</md-card>
+	</div>
+	<!--  wrap a card in a container since margins are
+				not calculated when using flex='', and cards
+				have minimal margins enforced by standard -->
+	<div flex="25" style="min-width: 260px !important;">
+		<md-card mdx-paint-bg="indigo primary">
+			<md-card-header mdx-paint-bg="accent">
+				<md-card-header-text>
+					<span class="md-title">Background</span>
+					<span class="md-subhead">Indigo</span>
+				</md-card-header-text>
+			</md-card-header>
+			<md-card-content>
+				Content
+			</md-card-content>
+			<md-card-actions>
+				<md-button>Reset</md-button>
+			</md-card-actions>
+		</md-card>
+	</div>
+</div>
